@@ -15,7 +15,6 @@ import java.util.List;
 public class Week {
 
     private List<Day> days;
-
     public void add(Day day){
         days.add(day);
     }
