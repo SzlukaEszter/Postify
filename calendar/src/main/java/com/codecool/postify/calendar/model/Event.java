@@ -6,7 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.Set;
 
 @Data
@@ -20,7 +22,9 @@ public class Event {
     @GeneratedValue
     private long id;
 
-    private LocalDateTime dateTime;
+    private LocalDate date;
+
+    private LocalTime time;
 
     private long contentId;
 
