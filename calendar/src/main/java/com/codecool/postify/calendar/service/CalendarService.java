@@ -20,7 +20,6 @@ public class CalendarService {
     @Autowired
     EventRepository eventRepository;
 
-    //todo: refactor getWeek - build list first, than build week
     public Week getWeek(LocalDate startDate){
 
         while (!startDate.getDayOfWeek().equals(DayOfWeek.MONDAY)){
